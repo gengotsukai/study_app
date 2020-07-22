@@ -1,0 +1,30 @@
+*Main.java
+class Main {
+  public static void main(String[] args) {
+    // newの引数に「Kate Jones」を渡してください
+    Person person1 = new Person("Kate Jones");
+    person1.hello();
+    
+    // newの引数に「John Christopher Smith」を渡してください
+    Person person2 = new Person("John Christopher Smith");
+    person2.hello();
+  }
+}
+
+
+*Person.java
+class Person {
+  public String name;
+
+  // コンストラクタがString型の引数を受け取るようにしてください
+  Person(String name) {
+    System.out.println("インスタンスが生成されました");
+    // インスタンスフィールドnameに値をセットしてください
+    this.name = name;
+    
+  }
+
+  public void hello() {
+    System.out.println("こんにちは、私は" + this.name + "です");
+  }
+}
