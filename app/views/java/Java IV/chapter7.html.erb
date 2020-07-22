@@ -1,0 +1,21 @@
+*Main.java
+class Main {
+  public static void main(String[] args) {
+    Person person1 = new Person();
+    Person person2 = new Person();
+  }
+}
+
+*Person.java
+class Person {
+  public String name;
+
+  // コンストラクタを定義してください
+  Person () {
+    System.out.println("インスタンスが生成されました");
+  }
+  
+  public void hello() {
+    System.out.println("こんにちは、私は" + this.name + "です");
+  }
+}
